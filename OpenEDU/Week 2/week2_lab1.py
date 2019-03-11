@@ -7,7 +7,6 @@ def read_file():
 
 def merge(left, right, left_border, right_border, file):
     result = []
-    inf = []
     i, j = 0, 0
     while i < len(left) and j < len(right):
         if left[i] < right[j]:
@@ -25,7 +24,7 @@ def merge(left, right, left_border, right_border, file):
 def merge_sort(data, left_border, right_border, file):
     if len(data) == 1:
         return data
-    middle = len(data)//2
+    middle = len(data) // 2
     left_data = merge_sort(data[:middle], left_border, left_border + middle - 1, file)
     right_data = merge_sort(data[middle:], left_border + middle, right_border, file)
     return merge(left_data, right_data, left_border, right_border, file)
