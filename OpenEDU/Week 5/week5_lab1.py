@@ -12,5 +12,6 @@ def main():
                 break
         io.write("YES" if is_heap else "NO")
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     main()
