@@ -1,4 +1,6 @@
 *.DS_Store
 *.txt
-*.pdf
+*.png
+*.pyx
 *.pages
+*.swp
